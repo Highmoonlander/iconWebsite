@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indux-Connect Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="resources/icon.png" alt="Indux-Connect Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#vision">Vision</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#uniqueness">Why us?</a></li>
+                    <li><a href="#social">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="announcement">
+        <div class="container">
+            <p>Announcement!! Registration for Secretaries are open. <a href="https://forms.gle/hUUp1ZHLceR7Uyfn8" class="btn">Register Here</a></p>
+        </div>
+    </div>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <h1>Indux-Connect</h1>
+                <p>Are you looking for opportunities to connect with industry experts? Want to gain hands-on experience in real-world projects? Introducing the Icon (Indus Connect) Club! We recognize the significant gap between theoretical learning in college and the practical industry skills that students need. To address this, we ensure to provide real-world project experiences and exposure to corporate environments, which are essential for enhancing student employability. Our club is dedicated to bridging this gap, ensuring that our members are well-prepared for the competitive job market and the challenges they will face in their future careers. These unique aspects set us apart, guaranteeing that our members gain crucial experience and skills that are vital for their future success. Join the Icon (Indus Connect Club) and be a part of this transformative journey!</p>
+                <a href="https://forms.gle/hUUp1ZHLceR7Uyfn8" class="btn btn-large">Join Now</a>
+            </div>
+        </section>
+
+        <section id="vision">
+            <div class="container">
+                <h2>Our Vision</h2>
+                <p>To be a leading platform that seamlessly integrates academic learning with industry practices, providing immersive, hands-on experiences that prepare our members to excel in dynamic corporate environments and drive innovation.</p>
+            </div>
+        </section>
+
+        <section id="mission">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>To bridge the gap between academia and industry by offering hands-on experiences that simulate corporate environments.</p>
+            </div>
+        </section>
+
+        <section id="uniqueness">
+            <div class="container">
+                <h2>What Makes Us Unique</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="resources/gaps.png" alt="Gaps" class="round">
+                        <h3>Gaps</h3>
+                        <p>There is a significant gap between theoretical learning in college and practical industry skills.</p>
+                    </div>
+                    <div class="card">
+                        <img src="resources/need.png" alt="Need" class="round">
+                        <h3>Need</h3>
+                        <p>Students need real-world project experience and exposure to corporate environments to enhance their employability.</p>
+                    </div>
+                    <div class="card">
+                        <img src="resources/urgency2.png" alt="Urgency" class="round">
+                        <h3>Urgency</h3>
+                        <p>It's critical to bridge these gaps promptly to prepare students effectively for competitive job markets and future career challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="social" class="section">
+            <div class="container">
+                <h2>Connect With Us</h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/indus-connect-vit-pune" aria-label="LinkedIn">LinkedIn<i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/icon_vitpune/" aria-label="Instagram">Insta<i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="line">
+            <hr>
+        </div>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Indux-Connect Club. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const announcement = document.querySelector('.announcement');
+        let lastScrollTop = 0;
+    
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                announcement.classList.add('hidden');
+            } else {
+                // Scrolling up
+                announcement.classList.remove('hidden');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+</html>
