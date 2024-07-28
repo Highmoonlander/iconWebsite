@@ -11,6 +11,11 @@
     <header>
         <div class="container">
             <img src="resources/icon.png" alt="Indux-Connect Logo" class="logo">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -165,6 +170,9 @@
         </div>
     </footer>
     <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
         const announcement = document.querySelector('.announcement');
         let lastScrollTop = 0;
     
