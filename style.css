@@ -54,7 +54,7 @@ header {
     text-align: center;
     padding: 1rem 0;
     position: fixed;
-    top: 9%; 
+    top: 10%; 
     left: 0;
     width: 100%;
     z-index: 999;
@@ -101,7 +101,6 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--primary-color);
 }
-
 
 .btn {
     display: inline-block;
@@ -204,12 +203,6 @@ h2 {
     transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: var(--primary-color);
-}
-
-.social-links a.fa-linkedin:hover { color: #0077b5; }
-.social-links a.fa-instagram:hover { color: #e1306c; }
 
 #line{
     display: flex;
@@ -260,6 +253,60 @@ footer {
 
 .social-links a:hover {
     color: var(--primary-color);
+}
+
+#our-team {
+    background-color: var(--card-bg-color);
+    padding: 4rem 0;
+   
+}
+  
+#our-team h2 {
+    margin-bottom: 2rem;
+}
+  
+.team-card {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+  
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+  
+.position {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+  
+.qualities {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+  
+.experience {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+  
+.sub-heading {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 3rem 0 2rem;
+    font-size: 2rem;
 }
 
 @media (max-width: 768px) {
