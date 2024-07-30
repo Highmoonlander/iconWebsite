@@ -312,7 +312,7 @@ footer {
 .hamburger {
     display: none;
     flex-direction: column;
-    justify-content:center;
+    align-item: center;
     cursor: pointer;
 }
 
