@@ -320,6 +320,7 @@ footer {
     height: 3px;
     background-color: var(--text-color);
     margin: 2px 0;
+    align-text: center;
 }
 
 @media (max-width: 768px) {
